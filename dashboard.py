@@ -78,8 +78,8 @@ total_orders = payment_counts['Unique Order Count'].sum()
 payment_counts['Percentage'] = (payment_counts['Unique Order Count'] / total_orders) * 100
 
 fig, ax = plt.subplots(figsize=(12,6))
-ax.bar(payment_counts['Payment Type'], payment_counts['Unique Order Count'], color=['orange', 'green', 'blue', 'purple',
-                                                                                    'red'])
+ax.bar(payment_counts['Payment Type'], payment_counts['Unique Order Count'], color=["#AD2E24", "#E37F78", "#E37F78",
+                                                                                    "#E37F78", "#E37F78"])
 ax.set_title('Jumlah Transaksi Berdasarkan Metode Pembayaran')
 ax.set_ylabel("Payment Type")
 ax.set_xlabel("Unique Order Count")
